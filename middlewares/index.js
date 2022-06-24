@@ -1,9 +1,9 @@
 import expressJwt from "express-jwt";
 import Hotel from "../models/hotel";
 
-// req.user
+
 export const requireSignin = expressJwt({
-  // secret, expiryDate
+
   secret: process.env.JWT_SECRET,
   algorithms: ["HS256"],
 });
